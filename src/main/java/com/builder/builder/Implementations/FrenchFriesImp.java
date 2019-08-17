@@ -1,4 +1,7 @@
-package com.builder.builder.DAO;
+package com.builder.builder.Implementations;
+
+import com.builder.builder.DAO.FrenchFries;
+import com.builder.builder.Interfaces.IFrenchFries;
 
 import java.math.BigDecimal;
 
@@ -25,7 +28,7 @@ public class FrenchFriesImp implements IFrenchFries {
     }
 
     @Override
-    public IFrenchFries setCheese(boolean cheese) {
+    public IFrenchFries setCheese(Boolean cheese) {
         frenchFriesTmp.setCheese(cheese);
         return this;
     }

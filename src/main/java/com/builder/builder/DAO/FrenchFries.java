@@ -9,7 +9,6 @@ public class FrenchFries {
     private BigDecimal weight;
     private Boolean cheese;
 
-
     @Override
     public String toString() {
         StringBuilder returnString = new StringBuilder();

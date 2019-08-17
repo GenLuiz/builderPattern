@@ -1,24 +1,32 @@
 package com.builder.builder;
 
-import com.builder.builder.DAO.*;
+import com.builder.builder.Directors.MilkshakeDirector;
+import com.builder.builder.Implementations.CheeseBurgerImp;
+import com.builder.builder.Implementations.FrenchFriesImp;
+import com.builder.builder.Directors.CheeseBurgerDirector;
+import com.builder.builder.Directors.FrenchFriesDirector;
+import com.builder.builder.Implementations.MilkshakeImp;
+import com.builder.builder.Interfaces.ICheeseBurger;
+import com.builder.builder.Interfaces.IFrenchFries;
+import com.builder.builder.Interfaces.IMilkshake;
 
-//@SpringBootApplication
 public class BuilderApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(BuilderApplication.class, args);
 
-		 ICheeseBurger cheeseBurgerbuilder = new CheeseBurgerImp();
-
-		CheeseBurgerDirector CheeseBurgerDirector = new CheeseBurgerDirector(cheeseBurgerbuilder);
-
+		ICheeseBurger cheeseBurgerBuilder = new CheeseBurgerImp();
+		CheeseBurgerDirector CheeseBurgerDirector = new CheeseBurgerDirector(cheeseBurgerBuilder);
 		System.out.println(CheeseBurgerDirector.construct());
 
-		IFrenchFries frenchFriesbuilder = new FrenchFriesImp();
-
-		FrenchFriesDirector frenchFriesDirector = new FrenchFriesDirector(frenchFriesbuilder);
-
+		IFrenchFries frenchFriesBuilder = new FrenchFriesImp();
+		FrenchFriesDirector frenchFriesDirector = new FrenchFriesDirector(frenchFriesBuilder);
 		System.out.println(frenchFriesDirector.construct());
+
+
+		IMilkshake milkShakeBuilder = new MilkshakeImp();
+		MilkshakeDirector milkshakeDirector = new MilkshakeDirector(milkShakeBuilder);
+		System.out.println(milkshakeDirector.construct());
+
 	}
 
 }

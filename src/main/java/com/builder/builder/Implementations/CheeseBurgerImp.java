@@ -1,5 +1,7 @@
-package com.builder.builder.DAO;
+package com.builder.builder.Implementations;
 
+import com.builder.builder.DAO.CheeseBurger;
+import com.builder.builder.Interfaces.ICheeseBurger;
 import java.math.BigDecimal;
 
 public class CheeseBurgerImp implements ICheeseBurger {
@@ -27,19 +29,19 @@ public class CheeseBurgerImp implements ICheeseBurger {
     }
 
     @Override
-    public ICheeseBurger setKetchup(boolean ketchup) {
+    public ICheeseBurger setKetchup(Boolean ketchup) {
         cheeseBurgerTmp.setKetchup(ketchup);
         return this;
     }
 
     @Override
-    public ICheeseBurger setMayonnaise(boolean mayonnaise) {
+    public ICheeseBurger setMayonnaise(Boolean mayonnaise) {
         cheeseBurgerTmp.setMayonnaise(mayonnaise);
         return this;
     }
 
     @Override
-    public ICheeseBurger setMustard(boolean mustard) {
+    public ICheeseBurger setMustard(Boolean mustard) {
         cheeseBurgerTmp.setMustard(mustard);
         return this;
     }
