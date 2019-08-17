@@ -18,4 +18,10 @@ public class FrenchFriesDirector {
                 .setCheese(true)
                 .build();
     }
+
+    public FrenchFries constructB() {
+        return builder.setWeight(new BigDecimal(400))
+                .setCheese(false)
+                .build();
+    }
 }

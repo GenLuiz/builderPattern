@@ -15,4 +15,9 @@ public class MilkshakeDirector {
         return builder.setZest(true)
                 .build();
     }
+
+    public Milkshake constructB() {
+        return builder.setZest(false)
+                .build();
+    }
 }

@@ -20,4 +20,12 @@ public class CheeseBurgerDirector {
                 .setMustard(true)
                 .build();
     }
+
+    public CheeseBurger constructB(){
+        return builder.setWeight(new BigDecimal(300))
+                .setKetchup(false)
+                .setMayonnaise(false)
+                .setMustard(false)
+                .build();
+    }
 }

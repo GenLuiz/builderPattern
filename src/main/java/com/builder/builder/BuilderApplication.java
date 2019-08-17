@@ -17,15 +17,18 @@ public class BuilderApplication {
 		ICheeseBurger cheeseBurgerBuilder = new CheeseBurgerImp();
 		CheeseBurgerDirector CheeseBurgerDirector = new CheeseBurgerDirector(cheeseBurgerBuilder);
 		System.out.println(CheeseBurgerDirector.construct());
+		System.out.println(CheeseBurgerDirector.constructB());
 
 		IFrenchFries frenchFriesBuilder = new FrenchFriesImp();
 		FrenchFriesDirector frenchFriesDirector = new FrenchFriesDirector(frenchFriesBuilder);
 		System.out.println(frenchFriesDirector.construct());
+		System.out.println(frenchFriesDirector.constructB());
 
 
 		IMilkshake milkShakeBuilder = new MilkshakeImp();
 		MilkshakeDirector milkshakeDirector = new MilkshakeDirector(milkShakeBuilder);
 		System.out.println(milkshakeDirector.construct());
+		System.out.println(milkshakeDirector.constructB());
 
 	}
 
