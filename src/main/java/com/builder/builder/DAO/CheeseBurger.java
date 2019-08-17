@@ -1,45 +1,15 @@
 package com.builder.builder.DAO;
 
+import lombok.Data;
 import java.math.BigDecimal;
 
+@Data
 public class CheeseBurger {
 
     private BigDecimal weight;
     private Boolean ketchup;
     private Boolean mayonnaise;
     private Boolean mustard;
-
-    public BigDecimal getWeight() {
-        return weight;
-    }
-
-    public void setWeight(BigDecimal weight) {
-        this.weight = weight;
-    }
-
-    public Boolean getKetchup() {
-        return ketchup;
-    }
-
-    public void setKetchup(Boolean ketchup) {
-        this.ketchup = ketchup;
-    }
-
-    public Boolean getMayonnaise() {
-        return mayonnaise;
-    }
-
-    public void setMayonnaise(Boolean mayonnaise) {
-        this.mayonnaise = mayonnaise;
-    }
-
-    public Boolean getMustard() {
-        return mustard;
-    }
-
-    public void setMustard(Boolean mustard) {
-        this.mustard = mustard;
-    }
 
     @Override
     public String toString() {
