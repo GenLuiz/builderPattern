@@ -2,11 +2,11 @@ package com.builder.builder.DAO;
 
 import java.math.BigDecimal;
 
-public class CheeseBurguerDirector {
+public class CheeseBurgerDirector {
 
     private ICheeseBurger builder;
 
-    public CheeseBurguerDirector(ICheeseBurger builder){
+    public CheeseBurgerDirector(ICheeseBurger builder){
         this.builder = builder;
     }
 

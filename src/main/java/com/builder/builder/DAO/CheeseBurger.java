@@ -14,6 +14,7 @@ public class CheeseBurger {
     @Override
     public String toString() {
         StringBuilder returnString = new StringBuilder();
+        returnString.append("Burger: ");
         returnString.append("Weight: "+ this.weight.toString()+"g");
         returnString.append(" Ketchup: "+ this.ketchup);
         returnString.append(" Mayonnaise: "+ this.mayonnaise);

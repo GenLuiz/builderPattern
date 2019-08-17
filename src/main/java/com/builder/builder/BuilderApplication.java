@@ -1,10 +1,6 @@
 package com.builder.builder;
 
-import com.builder.builder.DAO.CheeseBurgerImp;
-import com.builder.builder.DAO.CheeseBurguerDirector;
-import com.builder.builder.DAO.ICheeseBurger;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.builder.builder.DAO.*;
 
 //@SpringBootApplication
 public class BuilderApplication {
@@ -12,11 +8,17 @@ public class BuilderApplication {
 	public static void main(String[] args) {
 		//SpringApplication.run(BuilderApplication.class, args);
 
-		 ICheeseBurger builder = new CheeseBurgerImp();
+		 ICheeseBurger cheeseBurgerbuilder = new CheeseBurgerImp();
 
-		CheeseBurguerDirector CheeseBuildDirector = new CheeseBurguerDirector(builder);
+		CheeseBurgerDirector CheeseBurgerDirector = new CheeseBurgerDirector(cheeseBurgerbuilder);
 
-		System.out.println(CheeseBuildDirector.construct());
+		System.out.println(CheeseBurgerDirector.construct());
+
+		IFrenchFries frenchFriesbuilder = new FrenchFriesImp();
+
+		FrenchFriesDirector frenchFriesDirector = new FrenchFriesDirector(frenchFriesbuilder);
+
+		System.out.println(frenchFriesDirector.construct());
 	}
 
 }
